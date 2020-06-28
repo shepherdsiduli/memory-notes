@@ -4,11 +4,6 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.shepherd.core.data.Note
-import com.shepherd.core.repository.NoteRepository
-import com.shepherd.core.usecase.AddNote
-import com.shepherd.core.usecase.GetAllNotes
-import com.shepherd.core.usecase.GetNote
-import com.shepherd.core.usecase.RemoveNote
 import com.shepherd.memorynotes.framework.di.ApplicationModule
 import com.shepherd.memorynotes.framework.di.DaggerViewModelComponent
 import kotlinx.coroutines.CoroutineScope
