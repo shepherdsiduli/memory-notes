@@ -17,9 +17,9 @@ class ListViewModel(application: Application): AndroidViewModel(application) {
 
     private val coroutineScope = CoroutineScope(Dispatchers.IO)
 
-    val repository = NoteRepository(RoomNoteDataSource(application))
+    private val repository = NoteRepository(RoomNoteDataSource(application))
 
-    val useCases = UseCases(
+    private val useCases = UseCases(
         AddNote(repository),
         GetAllNotes(repository),
         GetNote(repository),
